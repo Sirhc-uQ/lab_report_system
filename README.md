@@ -1,4 +1,5 @@
 # A lab report system
+final project for CSE503S, WashU fall
 
 # Account System - 10
   - users can login/logout the system through their student ID - 5
