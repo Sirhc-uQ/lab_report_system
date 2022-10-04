@@ -1,0 +1,46 @@
+<!-- ============================================================== -->
+<!-- Left Sidebar - style you can find in sidebar.scss  -->
+<!-- ============================================================== -->
+<div class="navbar-default sidebar" role="navigation">
+    <div class="sidebar-nav slimscrollsidebar">
+        <div class="sidebar-head">
+            <h3><span class="fa-fw open-close"><i class="ti-close ti-menu"></i></span> <span class="hide-menu">Guide</span></h3> </div>
+        <div class="user-profile">
+            <div class="dropdown user-pro-body">
+                <div><img src="../plugins/images/users/varun.jpg" alt="user-img" class="img-circle"></div>
+                <a href="#" class="dropdown-toggle u-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span id="left_name">Unable to get the name</span> <span class="caret"></span></a>
+                <ul class="dropdown-menu animated flipInY">
+                    <li><a href="login.html"><i class="fa fa-power-off"></i> Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        <ul class="nav" id="side-menu">
+
+            <li> <a href="teacher_index.html" class="waves-effect"><i  class="mdi mdi-av-timer fa-fw"></i> <span class="hide-menu">Teacher Index</span></a> </li>
+
+            <li> <a href="my_student_report.html" class="waves-effect"><i  class="mdi mdi-calendar-text fa-fw"></i> <span class="hide-menu">Students' Report</span></a> </li>
+
+            <li> <a href="share_tome_report.html" class="waves-effect"><i  class="mdi mdi-creation fa-fw"></i> <span class="hide-menu">Share with Me</span></a> </li>
+
+            <li class="devider"></li>
+
+            <li> <a href="teacher_manage_student.html" class="waves-effect"><i  class="mdi mdi-account-edit fa-fw"></i> <span class="hide-menu">Manage students</span></a> </li>
+            <li> <a href="teacher_manage_deadline.html" class="waves-effect"><i  class="mdi mdi-update fa-fw"></i> <span class="hide-menu">Due Date</span></a> </li>
+            <li> <a href="teacher_update_password.html" class="waves-effect"><i  class="mdi mdi-key-variant fa-fw"></i> <span class="hide-menu">Change password</span></a> </li>
+
+            <li><a href="login.html" class="waves-effect"><i class="mdi mdi-logout fa-fw"></i> <span class="hide-menu">Logout</span></a></li>
+            <li class="devider"></li>
+<!--            <li><a href="documentationTeacher.html" class="waves-effect"><i class="fa fa-circle-o text-danger"></i> <span class="hide-menu">帮助文档</span></a></li>-->
+        </ul>
+    </div>
+</div>
+<!-- ============================================================== -->
+<!-- End Left Sidebar -->
+
+<script>
+
+    $(document).ready(function () {
+        $("#left_name").text(localStorage.getItem("name"));
+    })
+
+</script>
